@@ -1,0 +1,28 @@
+.chess-board {
+	display:inline-block;
+	background-color:brown;
+}
+.chess-board-table {
+	position:relative;
+	border:solid 1px yellow;
+}
+.cell-white, .cell-black {
+	position:absolute;
+	padding:2px;
+}
+.cell-white {
+	background-color:yellow;
+}
+.cell-black {
+	background-color:brown;
+}
+.cell-selected {
+	border:solid 2px red;
+	padding:0px;
+}
+.letter {
+	position:absolute;
+	font-family:Arial;
+	color:yellow;
+	font-weight:bold;
+}
