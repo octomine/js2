@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>lesson3</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+<body>
+	<script>
+		var re;
+		// задание №1
+		
+		re = /#[0-9A-F]{6}/ig;
+		console.log('cvbsger#abcdefsdfgxcbxc'.match(re));
+		
+		// задание №2
+		
+		re = /\d+(\.\d+)?/g;
+		console.log('1.5 2.52 0 12. -123.4.'.match(re));
+		
+		// задание №3
+		
+		re = /\d{2}[-:]\d{2}/g;
+		console.log('06:21 123:456 25-65'.match(re));
+		
+		// задание №4
+		
+		re = /[A-H][1-8]/;
+		var contestString1 = 'z0';
+		var contestString2 = 'A6';
+		console.log(contestString1 + ' is ' + re.test(contestString1));
+		console.log(contestString2 + ' is ' + re.test(contestString2));
+	</script>
+	
+	<form>
+		задание №5<br/><br/>
+		телефон <br/>
+		<input
+			type="text"
+			pattern="\+7\(\d{3}\)-\d{3}(-\d{2}){2}"
+			/><br/>
+		email <br/>
+		<input
+			type="text"
+			pattern="[\w0-9]+@[a-zA-Z0-9]+\.\w+"
+			/><br/>
+		номер и серия паспорта <br/>
+		<input
+			type="text"
+			pattern="\d{4}\s\d{6}"
+			/><br/>
+		<input type="submit"/>
+	</form>
+</body>
+</html>
