@@ -1,0 +1,17 @@
+.tab{
+	display:inline;
+	margin-right:1px;
+	border-radius:4px 4px 0px 0px;
+	padding:4px 15px;
+	background-color:#bbbbbb;
+	font-family:Arial;
+}
+.selected{
+	padding-bottom:5px;
+	background-color:#dddddd;
+}
+.content{
+	margin-top:3px;
+	padding:4px 15px;
+	background-color:#dddddd;
+}
