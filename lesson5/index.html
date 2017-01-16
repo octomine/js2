@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>lesson5</title>
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="js/clock.js"></script>
+	<script src="js/voter.js"></script>
+</head>
+<body onload="init(event)">
+	
+	<script>
+		function init () {
+			var c = new Clock( { 
+				elem:document.getElementById('clock') 
+			} );
+			c.start();
+			
+			var v = new Voter( {
+				elem:document.getElementById('voter')
+			} );
+			v.setVotes(74);
+		}
+	</script>
+	
+	<div id="clock">--:--:--</div>
+	<input type="button" onclick="alert('ALARM!!1');" value="alert" />
+	<div id="voter" class="voter">
+    <span class="down">—</span>
+    <span class="vote">0</span>
+    <span class="up">+</span>
+  </div>
+</body>
+</html>
